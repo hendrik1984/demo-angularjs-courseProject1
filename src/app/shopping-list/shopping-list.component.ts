@@ -22,4 +22,9 @@ export class ShoppingListComponent implements OnInit {
       )
   }
 
+  // remove after implemented shopping list service
+  // onIngredientAdded(ingredient: Ingredient) {
+  //   this.ingredients.push(ingredient);
+  // }
+
 }
