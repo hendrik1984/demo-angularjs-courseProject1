@@ -16,7 +16,7 @@ export class RecipeItemComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.recipe); // cant put under constructor() for logging this @Input
+    // console.log(this.recipe); // cant put under constructor() for logging this @Input
   }
 
   onSelected() {
