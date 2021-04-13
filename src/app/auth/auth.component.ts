@@ -49,3 +49,4 @@ export class AuthComponent {
         form.reset();
     }
 }
+
