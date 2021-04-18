@@ -71,7 +71,7 @@ export class AuthService {
     ) {
         const expirationDate = new Date(
              new Date().getTime() + expiresIn * 1000
-        );
+        ).toDateString();
 
         const user = new User(
             email,
