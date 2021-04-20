@@ -6,14 +6,6 @@
 <hr>
 <div class="row">
     <div class="col-xs-12">
-        <!-- before
-             <app-recipe-item
-            *ngFor="let recipeEl of recipes"
-            [recipe]="recipeEl"
-            (recipeSelected)="onRecipeSelected(recipeEl)"
-        ></app-recipe-item> -->
-
-        <!-- after implement service -->
         <app-recipe-item
             *ngFor="let recipeEl of recipes; let i = index"
             [recipe]="recipeEl"
