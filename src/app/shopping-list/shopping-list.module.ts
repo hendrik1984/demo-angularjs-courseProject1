@@ -3,10 +3,8 @@ import { NgModule } from "@angular/core";
 import { ShoppingListComponent } from './shopping-list.component';
 import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
 import { RouterModule } from "@angular/router";
-import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { BrowserModule } from "@angular/platform-browser";
-
+import { SharedModule } from "../shared/shared.module";
 
 @NgModule({
     declarations: [ShoppingListComponent, ShoppingEditComponent,],
@@ -14,9 +12,9 @@ import { BrowserModule } from "@angular/platform-browser";
         RouterModule.forChild([
             { path: 'shopping-list', component: ShoppingListComponent }
         ]),
-        CommonModule,
         ReactiveFormsModule,
         FormsModule,
+        SharedModule,
     ],
 })
 export class ShoppingListModule {}
