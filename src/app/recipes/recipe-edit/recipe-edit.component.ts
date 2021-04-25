@@ -68,6 +68,10 @@ export class RecipeEditComponent implements OnInit {
     return (<FormArray>this.recipeForm.get('ingredients')).controls;
   }
 
+  get ingredientsControls() {
+    return (this.recipeForm.get('ingredients') as FormArray).controls;
+  }
+
   private initForm() {
     let recipeName = '';
     let recipeImagePath = '';
